@@ -1,4 +1,13 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    color: white;
+    background-color: #121212;
+}
+
 header {
+    background-color: #202020;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,4 +18,11 @@ header {
     display: flex;
     align-items: center;
     gap: 50px;
+}
+
+#info_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
