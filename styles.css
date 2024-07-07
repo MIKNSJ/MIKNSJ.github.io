@@ -21,8 +21,23 @@ header {
 }
 
 #info_card {
-    display: flex;
+    background-color: #303030;
+    display: grid;
+    width: 50%;
+    margin: 75px auto;
+    padding: 0px 10%;
+    border: solid;
+    border-color: white;
+    border-width: 5px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+#ic_1 {
+    grid-row: span 2;
 }
