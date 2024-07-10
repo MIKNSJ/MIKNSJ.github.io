@@ -16,23 +16,18 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    /* padding: 0 5% */
+    padding: 10px 5%;
 }
 
 #h_container {
     max-width: 1100px;
     margin: 0 auto;
     /* overflow: auto;*/
-    /* padding: 0 5% */
-    padding: 10px 5%;
-
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-}
-
-header img {
-    width: 80px; 
 }
 
 .dropdown {
@@ -100,13 +95,42 @@ header img {
     transform: rotate(-90deg);
 }
 
-#test {
-    margin: 100px 0 0 0;
+#about {
+    max-width: 1100px;
+    margin: 125px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo_01 {
+    width: 200px; 
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 50%;
+}
+
+#about section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#about section h2 {
+    padding: 20px 0 0 0;
+}
+
+#about section p {
+    padding: 20px 20px 0 20px;
 }
 
 /* For screen sizes starting with the iPad Air */
 @media screen and (min-width: 750px) {
-    #h_container {
+    header {
         padding: 30px 5%;
     }
 
@@ -139,7 +163,6 @@ header img {
         display: flex;
         align-items: center;
         gap: 50px;
-        
         position: static;
         margin-top: 0;
         background-color: none;
@@ -157,5 +180,56 @@ header img {
         color: none;
         padding: 0;
         text-decoration: none;
+    }
+
+    #about {
+        max-width: 1100px;
+        margin: 125px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    
+    #about section {
+        display: block;
+        flex-direction: none;
+        justify-content: none;
+        align-items: none;
+    }
+    
+    #about section h2 {
+        padding: 0 0 0 0;
+    }
+
+    #about section p {
+        padding: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #about {
+        max-width: 1100px;
+        margin: 125px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #about section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+    
+    #about section h2 {
+        padding: 20px 0 0 0;
+    }
+    
+    #about section p {
+        padding: 20px 20px 0 20px;
     }
 }
