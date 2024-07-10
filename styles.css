@@ -2,26 +2,31 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 body {
-    font-family: sans-serif;
     color: white;
     background-color: #121212;
 }
 
 header {
     background-color: #202020;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 #h_container {
     max-width: 1100px;
     margin: 0 auto;
-    overflow: auto;
+    /*overflow: auto;*/
 
     display: flex;
     justify-content: space-between;
     align-content: center;
+    align-items: center;
     padding: 0 5%;
 }
 
@@ -29,8 +34,109 @@ header img {
     width: 80px; 
 }
 
-#menu {
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#nav_icon {
+    width: 45px;
+    height: 45px;
+    transition: 0.4s;
+}
+
+.dropdown button {
+    border: none;
+    cursor: pointer;
     display: flex;
+    background-color: inherit;
+    appearance: none;
+}
+
+.dropdown button:hover, .dropdown button:focus {
+    background-color: gray;
+}
+
+.dropdown a:hover {
+    background-color: gray;
+}
+
+.menu {
+    /*display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 50px;*/
+
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 50px;
+    background-color: #202020;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 3px 3px 30px 0px black;
+    z-index: 1;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
+}
+
+.change {
+    transition: 0.4s;
+    transform: rotate(-90deg);
+}
+
+#test {
+    margin: 100px 0 0 0;
+}
+
+@media screen and (min-width: 750px) {
+    .dropdown {
+        display: static;
+        position: static;
+    }
+    
+    .dropdown button {
+        display: none;
+        border: none;
+        cursor: none;
+        background-color: none;
+        appearance: none;
+    }
+
+    #nav_icon {
+        display: none;
+        width: 0;
+        height: 0;
+        transition: none;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        
+        position: static;
+        margin-top: 0;
+        background-color: none;
+        min-width: 0;
+        overflow: none;
+        box-shadow: none;
+        z-index: 1;
+    }
+
+    .menu a {
+        display: static;
+        color: none;
+        padding: 0;
+        text-decoration: none;
+    }
 }
