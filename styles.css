@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: Montserrat;
 }
 
 body {
@@ -21,13 +21,14 @@ header {
 #h_container {
     max-width: 1100px;
     margin: 0 auto;
-    /*overflow: auto;*/
+    /* overflow: auto;*/
+    /* padding: 0 5% */
+    padding: 10px 5%;
 
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding: 0 5%;
 }
 
 header img {
@@ -53,9 +54,9 @@ header img {
     appearance: none;
 }
 
-.dropdown button:hover, .dropdown button:focus {
+/* .dropdown button:hover, .dropdown button:focus {
     background-color: gray;
-}
+} */
 
 .dropdown a:hover {
     background-color: gray;
@@ -66,7 +67,7 @@ header img {
     align-items: center;
     gap: 50px;*/
 
-    display: none;
+    /*display: none;*/
     position: absolute;
     top: 0;
     right: 0;
@@ -76,6 +77,9 @@ header img {
     overflow: auto;
     box-shadow: 3px 3px 30px 0px black;
     z-index: 1;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
 }
 
 .menu a {
@@ -86,7 +90,9 @@ header img {
 }
 
 .show {
-    display: block;
+    /*display: block;*/
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .change {
@@ -98,7 +104,12 @@ header img {
     margin: 100px 0 0 0;
 }
 
+/* For screen sizes starting with the iPad Air */
 @media screen and (min-width: 750px) {
+    #h_container {
+        padding: 30px 5%;
+    }
+
     .dropdown {
         display: static;
         position: static;
@@ -110,6 +121,11 @@ header img {
         cursor: none;
         background-color: none;
         appearance: none;
+    }
+    
+    .dropdown a:hover {
+        background-color: transparent;
+        color: #3366CC;
     }
 
     #nav_icon {
@@ -131,6 +147,9 @@ header img {
         overflow: none;
         box-shadow: none;
         z-index: 1;
+        opacity: 1;
+        transform: none;
+        transition: none;
     }
 
     .menu a {
