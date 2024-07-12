@@ -236,6 +236,16 @@ header {
     align-items: center;
 }
 
+#email {
+    color: white;
+    text-decoration: none;
+}
+
+#phone {
+    color: white;
+    text-decoration: none;
+}
+
 #socials {
     margin-top: 20px;
 }
