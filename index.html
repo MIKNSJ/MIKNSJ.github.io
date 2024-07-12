@@ -26,9 +26,9 @@
                     </button>
 
                     <nav id = "dd_menu", class = "menu">
-                        <a id = "menu_01"> ABOUT </a>
-                        <a id = "menu_02"> WORKS </a>
-                        <a id = "menu_03"> CONTACT </a>
+                        <a href = "#about", id = "menu_01"> ABOUT </a>
+                        <a href = "#works", id = "menu_02"> WORKS </a>
+                        <a href = "#contact", id = "menu_03"> CONTACT </a>
                     </nav>
                 </div>
             </div>
@@ -79,12 +79,13 @@
                     <div id = "work_menu">
                         <div id = "work_01", class = "work_box">
                             <img src = "assets/ufo_hunt_game.png", alt = "ufo_icon", id = "ufo_icon", class = "work_img">
-                            <a class = "work_title"> UFO Hunt </a>
+                            <a href = "https://github.com/MIKNSJ/ufo-hunt", target="_blank", rel="noopener noreferrer", class = "work_title"> UFO Hunt </a>
                         </div>
 
                         <div id = "work_02", class = "work_box">
                             <img src = "assets/apoc_game.png", alt = "apoc_icon", id = "apoc_icon", class = "work_img">
-                            <a class = "work_title"> APOC </a>
+                            <a href =
+                                "https://github.com/MIKNSJ/prototype-apoc", target="_blank", rel="noopener noreferrer", class = "work_title"> APOC </a>
                         </div>
                     </div>
                 </section>
@@ -95,14 +96,20 @@
 
                 <section>
                     <div id = "contact_list">
-                        <p> Email: jasonkimnet@gmail.com </p>
-                        <p> Phone: (562) 316-0280 </p>
+                        <div id = "basic_info">
+                            <p id = "email"> Email: jasonkimnet@gmail.com </p>
+                            <p id = "phone"> Phone: (562) 316-0280 </p>
+                        </div>
                         <div id = "socials">
                             <nav>
-                                <img src = "assets/facebook.png", alt = "fb_icon", class = "s_logo", id = "fb_icon">
-                                <img src = "assets/linkedin.png", alt = "li_icon", class = "s_logo", id = "li_icon">
-                                <img src = "assets/github.png", alt = "gh_icon", class = "s_logo", id = "gh_icon">
-                                <img src = "assets/youtube.png", alt = "yt_icon", class = "s_logo", id = "yt_icon">
+                                <a href = "https://www.facebook.com/jsnkimm/",
+                                    target = "_blank", rel = "noopener noreferrer"><img src = "assets/facebook.png", alt = "fb_icon", class = "s_logo", id = "fb_icon"></a>
+                                <a href =
+                                    "https://www.linkedin.com/in/jsnkim/",
+                                    target="_blank", rel="noopener noreferrer"><img src = "assets/linkedin.png", alt = "li_icon", class = "s_logo", id = "li_icon"></a>
+                                <a href = "https://github.com/MIKNSJ", target="_blank", rel="noopener noreferrer"><img src = "assets/github.png", alt = "gh_icon", class = "s_logo", id = "gh_icon"></a>
+                                <a href = "https://www.youtube.com/@jkim367",
+                                    target="_blank", rel="noopener noreferrer"><img src = "assets/youtube.png", alt = "yt_icon", class = "s_logo", id = "yt_icon"></a>
                             </nav>
                         </div>
                     </div>
@@ -113,8 +120,7 @@
         <footer>
             <div id = "copyright">
                 <p id = "c_name"> &copy 2024 Jason Kim </p>
-                <p id = "quote"> The next engineer of tomorrow. </p>
-                <a id = "source"> View Source </a>
+                <a href = "https://github.com/MIKNSJ", target="_blank", rel="noopener noreferrer", id = "source"> View Source </a>
             </div>
         </footer>
     </body>

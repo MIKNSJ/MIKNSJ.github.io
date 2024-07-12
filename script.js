@@ -1,3 +1,4 @@
+/* Code Snippet: https://www.w3schools.com/howto/howto_js_dropdown.asp */
 function clickMenuButton() {
     document.getElementById("nav_icon").classList.toggle("change");
     document.getElementById("dd_menu").classList.toggle("show");

@@ -5,6 +5,10 @@
     font-family: Montserrat;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: white;
     background-color: #121212;
@@ -102,6 +106,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    scroll-margin-top: 10rem;
 }
 
 #logo_01 {
@@ -167,11 +172,13 @@ header {
     border-radius: 25px;
     width: 90%;
     margin: 50px auto 0 auto;
+    box-shadow: 5px 5px 5px 0px #5c5c5c;
 }
 
 #works {
     max-width: 1100px;
     margin: 125px auto;
+    scroll-margin-top: 10rem;
 }
 
 .work_box {
@@ -185,6 +192,11 @@ header {
     border-radius: 25px;
     width: 90%;
     margin: 50px auto 0 auto;
+    box-shadow: 5px 5px 5px 0px #5c5c5c;
+}
+
+.work_box a:hover, #copyright a:hover{
+    color: #3366CC;
 }
 
 .work_img {
@@ -194,6 +206,11 @@ header {
     width: 100%;
 }
 
+.work_box a {
+    color: white;
+    text-decoration: none;
+}
+
 .work_title {
     font-size: 30px;
 }
@@ -201,6 +218,7 @@ header {
 #contact {
     max-width: 1100px;
     margin: 125px auto;
+    /*scroll-margin-top: 10rem;*/
 }
 
 #contact_list {
@@ -209,6 +227,13 @@ header {
     justify-content: center;
     align-items: center;
     margin: 50px auto 0 auto;
+}
+
+#basic_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #socials {
@@ -226,11 +251,21 @@ header {
     border-radius: 10px;
 }
 
-#gh_icon {
+.s_logo:hover {
     border: solid;
+    border-color: #CC9933;
+}
+
+#gh_icon {
+    /*border: solid;
     border-color: black;
-    padding: 3px;
+    padding: 3px;*/
     filter: invert(1);
+}
+
+#gh_icon:hover {
+    border: solid;
+    border-color: #3366CC;
 }
 
 footer {
@@ -247,6 +282,7 @@ footer {
 
 #copyright p, #copyright a {
     color: #636363;
+    text-decoration: none;
 }
 
 /* For screen sizes starting with the iPad Air */
@@ -414,16 +450,40 @@ footer {
     .work_img {
         height: 264px;
     }*/
+
+    #contact_list {
+        padding: 0 55px 0 55px;
+    }
+
+    /*#basic_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #email::after {
+        content: "|";
+        padding: 0 3px 0 1px;
+        color: #636363;
+    }
+
+    #phone {
+        padding-right: 80px;
+    }*/
     
     #copyright {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding: 0 55px 0 55px;
     }
 
-    #c_name::after, #quote::after {
+    /*#quote::before, #quote::after {
         content: "|";
         padding: 0 100px 0 100px;
         color: #636363;
-    }
+    }*/
+
+
 }
