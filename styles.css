@@ -141,7 +141,7 @@ header {
 }
 
 #exp_menu {
-    display: block;
+    display: flex;
 }
 
 .role {
@@ -196,6 +196,57 @@ header {
 
 .work_title {
     font-size: 30px;
+}
+
+#contact {
+    max-width: 1100px;
+    margin: 125px auto;
+}
+
+#contact_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0 auto;
+}
+
+#socials {
+    margin-top: 20px;
+}
+
+#socials nav {
+    display: flex;
+    gap: 20px;
+}
+
+.s_logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#gh_icon {
+    border: solid;
+    border-color: black;
+    padding: 3px;
+    filter: invert(1);
+}
+
+footer {
+    max-width: 1100px;
+    margin: 0 auto 50px auto;
+}
+
+#copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright p, #copyright a {
+    color: #636363;
 }
 
 /* For screen sizes starting with the iPad Air */
@@ -363,4 +414,16 @@ header {
     .work_img {
         height: 264px;
     }*/
+    
+    #copyright {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #c_name::after, #quote::after {
+        content: "|";
+        padding: 0 100px 0 100px;
+        color: #636363;
+    }
 }
