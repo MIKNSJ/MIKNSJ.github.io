@@ -21,7 +21,7 @@ header {
 }
 
 #h_container {
-    max-width: 1100px;
+    max-width: 990px;
     margin: 0 auto;
     /* overflow: auto;*/
     display: flex;
@@ -125,8 +125,9 @@ header {
 }
 
 #about section p {
+    width: 90%;
     text-indent: 25px;
-    padding: 20px 20px 0 20px;
+    padding: 20px 0 0 0;
 }
 
 #experience {
@@ -191,8 +192,6 @@ header {
     border-bottom: solid;
     border-radius: 25px;
     width: 100%;
-    height: 510px;
-    margin-bottom: 10px;
 }
 
 .work_title {
@@ -258,7 +257,7 @@ header {
     header {
         padding: 30px 5%;
     }
-
+    
     .dropdown {
         display: static;
         position: static;
@@ -314,6 +313,7 @@ header {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: stretch;
+        padding: 0 55px 0 55px;
     }
     
     #about section {
@@ -325,6 +325,7 @@ header {
     }
     
     #about section p {
+        width: 100%;
         text-indent: 0;
         padding: 20px 0 0 0;
     }
@@ -340,10 +341,14 @@ header {
     .date {
         font-size: 20px;
     }
-    
+
     .exp_box {
         width: 100%;
         margin: 50px 0 0 0;
+    }
+
+    #experience {
+        padding: 0 55px 0 55px;
     }
 
     #work_menu {
@@ -351,9 +356,11 @@ header {
         justify-content: space-between;
         align-items: center;
         gap: 50px;
+        padding: 0 55px 0 55px;
     }
 
+    /* set a fixed height if unbalanced
     .work_img {
-        height: 290px;
-    }
+        height: 264px;
+    }*/
 }
