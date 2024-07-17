@@ -81,8 +81,8 @@ header {
     transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
 }
 
-.menu a {
-    display: block;
+.menu_options {
+    display: none;
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -94,6 +94,9 @@ header {
     transform: translateY(0px);
 }
 
+.show_menu_options {
+    display: block;
+}
 .change {
     transition: 0.4s;
     transform: rotate(-90deg);
@@ -342,8 +345,8 @@ footer {
         transition: none;
     }
 
-    .menu a {
-        display: static;
+    .menu_options {
+        display: block;
         color: none;
         padding: 0;
         text-decoration: none;
@@ -396,8 +399,8 @@ footer {
         transition: none;
     }
 
-    .menu a {
-        display: static;
+    .menu_options {
+        display: block;
         color: none;
         padding: 0;
         text-decoration: none;

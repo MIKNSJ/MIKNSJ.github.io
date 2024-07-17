@@ -20,10 +20,14 @@ Tools
 - Vim + coc.nvim
 - npm + live-server
 
+<br>
+
 Assets
 
-Since assets are constantly being updated. Refer to the ```assets``` folder
+Since assets are constantly being updated, please refer to the ```assets``` folder
 to find out more.
+
+<br>
 
 Code
 
