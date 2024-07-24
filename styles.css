@@ -21,6 +21,7 @@ header {
     left: 0;
     width: 100%;
     padding: 10px 5%;
+    z-index: 10;
 }
 
 #h_container {
@@ -159,13 +160,11 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #303030;
-    border: solid;
-    border-color: white;
+    background-color: #202020;
     border-radius: 25px;
     width: 90%;
     margin: 25px auto 0 auto;
-    box-shadow: 3px 3px 3px 0px rgba(255,255,255,0.75);
+    box-shadow: 1px 1px 3px 3px rgba(0,0,0,1);
 }
 
 #works {
@@ -174,23 +173,21 @@ header {
     scroll-margin-top: 10rem;
 }
 
-/*#work_menu {
+#work_menu {
     display: flex;
     flex-direction: column;
-}*/
+}
 
 .work_box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #303030;
-    border: solid;
-    border-color: white;
+    background-color: #202020;
     border-radius: 25px;
-    width: 90%;
     margin: 50px auto 0 auto;
-    box-shadow: 3px 3px 3px 0px rgba(255,255,255,0.75);
+    box-shadow: 1px 1px 3px 3px rgba(0,0,0,1);
+    width: 90%;
 }
 
 .work_box a, #copyright a {
@@ -204,8 +201,16 @@ header {
 .work_img {
     display: flex;
     border-bottom: solid;
+    border-color: black;
     border-radius: 25px;
     width: 100%;
+}
+
+.work_tools {
+    border-bottom: solid;
+    border-color: gray;
+    width: 100%;
+    text-align: center;
 }
 
 .work_box a {
@@ -263,21 +268,8 @@ header {
     border-radius: 10px;
 }
 
-.s_logo:hover {
-    border: solid;
-    border-color: #CC9933;
-}
-
 #gh_icon {
-    /*border: solid;
-    border-color: black;
-    padding: 3px;*/
     filter: invert(1);
-}
-
-#gh_icon:hover {
-    border: solid;
-    border-color: #3366CC;
 }
 
 footer {
@@ -399,7 +391,7 @@ footer {
         min-width: 0;
         overflow: none;
         box-shadow: none;
-        z-index: 1;
+        z-index: 3;
         pointer-events: auto;
         opacity: 1;
         transform: none;
@@ -457,52 +449,39 @@ footer {
         padding: 0 55px 0 55px;
     }
 
+    .work_box {
+        z-index: 2;
+        transform: scale(1);
+        transition: transform 1s;
+    }
+
+    .work_box:hover {
+        z-index: 3;
+        transform: scale(1.25);
+    }
+
     #work_menu {
-        display: flex;
+        /*flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: 50px;
-        padding: 0 55px 0 55px;
-    }
+        */
 
-    /* set a fixed height if unbalanced
-    .work_img {
-        height: 264px;
-    }*/
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    
+        padding: 0 36px 0 36px;
+    }
 
     #contact_list {
         padding: 0 55px 0 55px;
     }
 
-    /*#basic_info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    #email::after {
-        content: "|";
-        padding: 0 3px 0 1px;
-        color: #636363;
-    }
-
-    #phone {
-        padding-right: 80px;
-    }*/
-    
     #copyright {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0 55px 0 55px;
     }
-
-    /*#quote::before, #quote::after {
-        content: "|";
-        padding: 0 100px 0 100px;
-        color: #636363;
-    }*/
-
-
 }
