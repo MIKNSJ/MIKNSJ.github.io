@@ -20,7 +20,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    /* padding: 0 5% */
     padding: 10px 5%;
 }
 
@@ -53,20 +52,12 @@ header {
     appearance: none;
 }
 
-/* .dropdown button:hover, .dropdown button:focus {
-    background-color: gray;
-} */
-
 .dropdown a:hover {
     background-color: gray;
 }
 
 .menu {
-    /*display: flex;
-    align-items: center;
-    gap: 50px;*/
-
-    /*display: none;*/
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
@@ -76,27 +67,25 @@ header {
     overflow: auto;
     box-shadow: 3px 3px 30px 0px black;
     z-index: 1;
+    pointer-events: none;
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
 }
 
 .menu_options {
-    display: none;
+    display: block;
     color: white;
     padding: 12px 16px;
     text-decoration: none;
 }
 
 .show {
-    /*display: block;*/
     opacity: 1;
     transform: translateY(0px);
+    pointer-events: auto;
 }
 
-.show_menu_options {
-    display: block;
-}
 .change {
     transition: 0.4s;
     transform: rotate(-90deg);
@@ -150,6 +139,7 @@ header {
 
 #exp_menu {
     display: flex;
+    flex-direction: column;
 }
 
 .role {
@@ -174,8 +164,8 @@ header {
     border-color: white;
     border-radius: 25px;
     width: 90%;
-    margin: 50px auto 0 auto;
-    box-shadow: 5px 5px 5px 0px #5c5c5c;
+    margin: 25px auto 0 auto;
+    box-shadow: 3px 3px 3px 0px rgba(255,255,255,0.75);
 }
 
 #works {
@@ -183,6 +173,11 @@ header {
     margin: 125px auto;
     scroll-margin-top: 10rem;
 }
+
+/*#work_menu {
+    display: flex;
+    flex-direction: column;
+}*/
 
 .work_box {
     display: flex;
@@ -195,10 +190,14 @@ header {
     border-radius: 25px;
     width: 90%;
     margin: 50px auto 0 auto;
-    box-shadow: 5px 5px 5px 0px #5c5c5c;
+    box-shadow: 3px 3px 3px 0px rgba(255,255,255,0.75);
 }
 
-.work_box a:hover, #copyright a:hover{
+.work_box a, #copyright a {
+    transition: 0.5s;
+}
+
+.work_box a:hover, #copyright a:hover {
     color: #3366CC;
 }
 
@@ -316,6 +315,10 @@ footer {
         background-color: none;
         appearance: none;
     }
+
+    .dropdown a {
+        transition: color 0.5s;
+    }
     
     .dropdown a:hover {
         background-color: transparent;
@@ -346,7 +349,6 @@ footer {
     }
 
     .menu_options {
-        display: block;
         color: none;
         padding: 0;
         text-decoration: none;
@@ -371,6 +373,10 @@ footer {
         appearance: none;
     }
     
+    .dropdown a {
+        transition: color 0.5s;
+    }
+    
     .dropdown a:hover {
         background-color: transparent;
         color: #3366CC;
@@ -394,13 +400,13 @@ footer {
         overflow: none;
         box-shadow: none;
         z-index: 1;
+        pointer-events: auto;
         opacity: 1;
         transform: none;
         transition: none;
     }
 
     .menu_options {
-        display: block;
         color: none;
         padding: 0;
         text-decoration: none;
