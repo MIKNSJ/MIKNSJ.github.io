@@ -164,13 +164,16 @@ header {
     border-radius: 25px;
     width: 90%;
     margin: 25px auto 0 auto;
-    box-shadow: 1px 1px 3px 3px rgba(0,0,0,1);
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,1);
 }
 
 #works {
     max-width: 1100px;
     margin: 125px auto;
     scroll-margin-top: 10rem;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 #work_menu {
@@ -183,18 +186,19 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     background-color: #202020;
     border-radius: 25px;
     margin: 50px auto 0 auto;
-    box-shadow: 1px 1px 3px 3px rgba(0,0,0,1);
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,1);
     width: 90%;
 }
 
-.work_box a, #copyright a {
-    transition: 0.5s;
+.work_box a, .work_link, #copyright a {
+    transition: color 0.5s;
 }
 
-.work_box a:hover, #copyright a:hover {
+.work_box a:hover, .work_link:hover, #copyright a:hover {
     color: #3366CC;
 }
 
@@ -220,6 +224,21 @@ header {
 
 .work_title {
     font-size: 30px;
+}
+
+.work_button {
+    margin: 50px auto 0 auto;
+    padding: 0 20px 0 20px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,1);
+    border: none;
+    border-radius: 25px;
+    background-color: #202020;
+}
+
+.work_link {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
 }
 
 #contact {
@@ -443,6 +462,13 @@ footer {
     .exp_box {
         width: 100%;
         margin: 50px 0 0 0;
+        z-index: 2;
+        transform: scale(1);
+        transition: transform 1s;
+    }
+
+    .exp_box:hover {
+        transform: scale(1.05)
     }
 
     #experience {
@@ -456,6 +482,17 @@ footer {
     }
 
     .work_box:hover {
+        z-index: 3;
+        transform: scale(1.25);
+    }
+
+    .work_box img {
+        z-index: 2;
+        transform: scale(1);
+        transition: transform 5s;
+    }
+
+    .work_box:hover img {
         z-index: 3;
         transform: scale(1.25);
     }
