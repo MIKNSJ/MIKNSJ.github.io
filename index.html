@@ -17,124 +17,188 @@
 
     <body>
         <header>
-            <div id = "h_container">
-                <!--img src = "assets/logo.png", alt = "profile_logo", id = "logo_00"-->
-                <h2 id = "logo_00"> JASON KIM </h2>
+            <div class = "container">
+                <nav class = "nav_bar">
+                    <!--img src = "assets/logo.png", alt = "profile_logo", id = "logo_00"-->
+                    <h2 id = "logo_00"> JASON KIM </h2>
 
-                <div class = "dropdown">
-                    <button onclick = "clickMenuButton()", class = "nav_button">
-                        <img src = "assets/nav_icon.png", alt = "nav_icon", class = "nav_button", id = "nav_icon">
-                    </button>
+                    <div class = "dropdown">
+                        <button onclick = "clickMenuButton()", class = "nav_button">
+                            <img src = "assets/nav_icon.png", alt = "nav_icon", class = "nav_button", id = "nav_icon">
+                        </button>
 
-                    <nav id = "dd_menu", class = "menu">
-                        <a href = "#about", id = "menu_01", class = "menu_options"> ABOUT </a>
-                        <a href = "#works", id = "menu_02", class = "menu_options"> WORKS </a>
-                        <a href = "#contact", id = "menu_03", class = "menu_options"> CONTACT </a>
-                    </nav>
-                </div>
+                        <nav id = "dd_menu", class = "menu">
+                            <a href = "#about", id = "menu_01", class = "menu_options"> ABOUT </a>
+                            <a href = "#works", id = "menu_02", class = "menu_options"> WORKS </a>
+                            <a href = "#contact", id = "menu_03", class = "menu_options"> CONTACT </a>
+                        </nav>
+                    </div>
+                </nav>
             </div>
         </header>
 
         <main>
-            <div id = "about">
-                <img src = "assets/logo.png", alt = "profile_logo", id = "logo_01">
-
-                <section>
-                    <h2> Hi, I am Jason Kim. </h2>
-                    <p>
-                        I am a recent graduate in Computer Science that is looking
-                        to break into the Software Engineering field. I worked with
-                        different languages and libraries to create programs, such
-                        as 2D-oriented video games. I look forward to many upcoming
-                        opportunities to meet new people and work on new
-                        applications/tools to become a better developer.
-                    </p>
-                </section>
+            <div class = "container"> 
+                <div class = "barrier"></div>
             </div>
 
-            <div id = "experience">
-                <h2 class = "sec_title"> EXPERIENCE </h2>
+            <div class = "container">
+                <div id = "about">
+                    <img src = "assets/logo.png", alt = "profile_logo", id = "logo_01">
 
-                <section>
-                    <div id = "exp_menu">
-                        <div id = exp_01, class = "exp_box">
-                            <p class = "role"> Independent Studies </p>
-                            <p class = "location"> N/A </p>
-                            <p class = "date"> March 2024 - Present </p>
-                        </div>
-                        <div id = "exp_02", class = "exp_box">
-                            <p class = "role"> B.S Computer Science </p>
-                            <p class = "location"> UC San Diego </p>
-                            <p class = "date"> September 2021 - March 2024 </p>
-                        </div>
-                    </div>
-                </section>
+                    <section>
+                        <h2> Hi, I am Jason Kim. </h2>
+                        <p>
+                            I am a graduate in Computer Science that is looking
+                            to break into the Software Engineering field. I worked with
+                            different languages and libraries to create programs, such
+                            as 2D-oriented video games. I look forward to new opportunities to meet people and work on
+                            complex projects to become a better programmer.
+                        </p>
+                    </section>
+                </div>
             </div>
 
-            <div id = "works">
-                <h2 class = "sec_title"> FEATURED WORKS </h2>
-
-                <section>
-                    <div id = "work_menu">
-                        <!-- 1918 x 990 -->
-                        <div id = "work_01", class = "work_box">
-                            <img src = "assets/ufo_hunt_game.png", alt = "ufo_icon", id = "ufo_icon", class = "work_img">
-                            <p class = "work_tools"> C </p>
-                            <a href = "https://github.com/MIKNSJ/ufo-hunt", target="_blank", rel="noopener noreferrer", class = "work_title">UFO Hunt</a>
-                        </div>
-
-                        <div id = "work_02", class = "work_box">
-                            <img src = "assets/apoc_game.png", alt = "apoc_icon", id = "apoc_icon", class = "work_img">
-                            <p class = "work_tools"> C++ </p>
-                            <a href =
-                                "https://github.com/MIKNSJ/prototype-apoc", target="_blank", rel="noopener noreferrer", class = "work_title">APOC</a>
-                        </div>
-
-                        <div id = "work_03", class = "work_box">
-                            <img src = "assets/svd_gui.png", alt = "svd_icon", id = "svd_icon", class = "work_img">
-                            <p class = "work_tools"> C++ </p>
-                            <a href =
-                                "https://github.com/MIKNSJ/mini-svd-calc", target="_blank", rel="noopener noreferrer",
-                                class = "work_title">SVD Calculator</a>
-                        </div>
-                    </div>
-                </section>
-                
-                <button class = "work_button">
-                    <a href = "https://github.com/MIKNSJ/projects", target="_blank", rel="noopener noreferrer", class = "work_link">BROWSE MORE</a>
-                </button>
+            <div class = "container"> 
+                <div class = "barrier"></div>
             </div>
 
-            <div id = "contact">
-                <h2 class = "sec_title"> CONTACT </h2>
+            <div class = "container">
+                <div id = "experience">
+                    <h2 class = "sec_title"> EXPERIENCE </h2>
 
-                <section>
-                    <div id = "contact_list">
-                        <div id = "basic_info">
-                            <p id = "email"> Email: jasonkimnet@gmail.com </p>
-                            <p id = "phone"> Phone: (562) 316-0280 </p>
+                    <section>
+                        <div id = "exp_menu">
+                            <div id = exp_01, class = "exp_box">
+                                <p class = "role"> Independent Studies </p>
+                                <p class = "location"> Remote </p>
+                                <p class = "date"> March 2024 - Present </p>
+                            </div>
+                            <div id = "exp_02", class = "exp_box">
+                                <p class = "role"> B.S Computer Science </p>
+                                <p class = "location"> UC San Diego </p>
+                                <p class = "date"> September 2021 - March 2024 </p>
+                            </div>
                         </div>
-                        <div id = "socials">
-                            <nav>
-                                <a href = "https://www.facebook.com/jsnkimm/",
-                                    target = "_blank", rel = "noopener noreferrer"><img src = "assets/facebook.png", alt = "fb_icon", class = "s_logo", id = "fb_icon"></a>
+                    </section>
+                </div>
+            </div>
+
+            <div class = "container"> 
+                <div class = "barrier"></div>
+            </div>
+
+            <div class = container>
+                <div id = "works">
+                    <h2 class = "sec_title"> FEATURED WORKS </h2>
+
+                    <section>
+                        <div id = "work_menu">
+                            <!-- 1918 x 990 -->
+                            <div id = "work_01", class = "work_box">
+                                <img src = "assets/ufo_hunt_game.png", alt = "ufo_icon", id = "ufo_icon", class = "work_img">
+                                <p class = "work_tools"> C </p>
+                                <a href = "https://github.com/MIKNSJ/ufo-hunt", target="_blank", rel="noopener noreferrer", class = "work_title">UFO Hunt</a>
+                            </div>
+
+                            <div id = "work_02", class = "work_box">
+                                <img src = "assets/apoc_game.png", alt = "apoc_icon", id = "apoc_icon", class = "work_img">
+                                <p class = "work_tools"> C++ </p>
                                 <a href =
-                                    "https://www.linkedin.com/in/jsnkim/",
-                                    target="_blank", rel="noopener noreferrer"><img src = "assets/linkedin.png", alt = "li_icon", class = "s_logo", id = "li_icon"></a>
-                                <a href = "https://github.com/MIKNSJ", target="_blank", rel="noopener noreferrer"><img src = "assets/github.png", alt = "gh_icon", class = "s_logo", id = "gh_icon"></a>
-                                <a href = "https://www.youtube.com/@jkim367",
-                                    target="_blank", rel="noopener noreferrer"><img src = "assets/youtube.png", alt = "yt_icon", class = "s_logo", id = "yt_icon"></a>
-                            </nav>
+                                    "https://github.com/MIKNSJ/prototype-apoc", target="_blank", rel="noopener noreferrer", class = "work_title">APOC</a>
+                            </div>
+
+                            <div id = "work_03", class = "work_box">
+                                <img src = "assets/svd_gui.png", alt = "svd_icon", id = "svd_icon", class = "work_img">
+                                <p class = "work_tools"> C++ </p>
+                                <a href =
+                                    "https://github.com/MIKNSJ/mini-svd-calc", target="_blank", rel="noopener noreferrer",
+                                    class = "work_title">SVD Calculator</a>
+                            </div>
+
+                            <div id = "work_04", class = "work_box">
+                                <img src = "assets/minesweeper.png", alt = "ms_icon", id = "ms_icon", class = "work_img">
+                                <p class = "work_tools"> C++ </p>
+                                <a href =
+                                    "https://github.com/MIKNSJ/minesweeper", target="_blank", rel="noopener noreferrer",
+                                    class = "work_title">Minesweeper</a>
+                            </div>
+                                
+                            <div id = "work_05", class = "work_box">
+                                <img src = "assets/dynamic_array.png", alt = "cv_icon", id = "cv_icon", class = "work_img">
+                                <p class = "work_tools"> C </p>
+                                <a href =
+                                    "https://github.com/MIKNSJ/cvector", target="_blank", rel="noopener noreferrer",
+                                    class = "work_title">cvector</a>
+                            </div>
+                            
+                            <div id = "work_06", class = "work_box">
+                                <img src = "assets/blackjack.png", alt = "bj_icon", id = "bj_icon", class = "work_img">
+                                <p class = "work_tools"> Python </p>
+                                <a href =
+                                    "https://github.com/MIKNSJ/cs50p-final-project-2024", target="_blank", rel="noopener noreferrer",
+                                    class = "work_title">Blackjack</a>
+                            </div>
                         </div>
+                    </section>
+                    
+                    <button class = "work_button">
+                        <a href = "https://github.com/MIKNSJ/projects", target="_blank", rel="noopener noreferrer", class = "work_link">BROWSE MORE</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class = "container"> 
+                <div class = "barrier"></div>
+            </div>
+
+            <div class = "container">
+                <div id = "contact">
+                    <h2 class = "sec_title"> CONTACT </h2>
+                    
+                    <div class = "container"> 
+                        <div class = "barrier"></div>
                     </div>
-                </section>
+
+                    <section>
+                        <div id = "contact_list">
+                            <div id = "basic_info">
+                                <p id = "email"> Email: jasonkimnet@gmail.com </p>
+                                <p id = "phone"> Phone: (562) 316-0280 </p>
+                            </div>
+
+                            <div id = "socials">
+                                <nav>
+                                    <a href = "https://www.facebook.com/jsnkimm/",
+                                        target = "_blank", rel = "noopener noreferrer"><img src = "assets/facebook.png", alt = "fb_icon", class = "s_logo", id = "fb_icon"></a>
+                                    <a href =
+                                        "https://www.linkedin.com/in/jsnkim/",
+                                        target="_blank", rel="noopener noreferrer"><img src = "assets/linkedin.png", alt = "li_icon", class = "s_logo", id = "li_icon"></a>
+                                    <a href = "https://github.com/MIKNSJ", target="_blank", rel="noopener noreferrer"><img src = "assets/github.png", alt = "gh_icon", class = "s_logo", id = "gh_icon"></a>
+                                    <a href = "https://www.youtube.com/@jkim367",
+                                        target="_blank", rel="noopener noreferrer"><img src = "assets/youtube.png", alt = "yt_icon", class = "s_logo", id = "yt_icon"></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
         </main>
 
         <footer>
-            <div id = "copyright">
-                <p id = "c_name"> &copy 2024 Jason Kim </p>
-                <a href = "https://github.com/MIKNSJ/MIKNSJ.github.io", target="_blank", rel="noopener noreferrer", id = "source"> View Source </a>
+            <div class = "container"> 
+                <div class = "barrier"></div>
+            </div>
+                    
+            <div class = "container">
+                <div id = "copyright">
+                    <p id = "c_name"> &copy 2024 Jason Kim </p>
+                    <a href = "https://github.com/MIKNSJ/MIKNSJ.github.io", target="_blank", rel="noopener noreferrer", id = "source"> View Source </a>
+                </div>
+            </div>
+
+            <div class = "container"> 
+                <div id = "last_barrier" class = "barrier"></div>
             </div>
         </footer>
     </body>

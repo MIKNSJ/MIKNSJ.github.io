@@ -20,18 +20,24 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 5%;
     z-index: 10;
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
 }
 
-#h_container {
-    max-width: 990px;
+.container {
+    max-width: 1100px;
     margin: 0 auto;
-    /* overflow: auto;*/
+}
+
+.barrier {
+    height: 125px;
+}
+
+.nav_bar {
     display: flex;
     justify-content: space-between;
-    align-content: center;
     align-items: center;
+    padding: 10px 5%;
 }
 
 .dropdown {
@@ -93,12 +99,12 @@ header {
 }
 
 #about {
-    max-width: 1100px;
-    margin: 125px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
+    padding: 0 5% 0 5%;
     scroll-margin-top: 10rem;
 }
 
@@ -115,22 +121,19 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-}
-
-#about section h2 {
-    padding: 20px 0 0 0;
+    gap: 20px;
 }
 
 #about section p {
-    width: 90%;
     text-indent: 25px;
-    padding: 20px 0 0 0;
 }
 
 #experience {
-    max-width: 1100px;
-    margin: 125px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 5% 0 5%;
 }
 
 .sec_title {
@@ -141,6 +144,7 @@ header {
 #exp_menu {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .role {
@@ -162,23 +166,23 @@ header {
     align-items: center;
     background-color: #202020;
     border-radius: 25px;
-    width: 90%;
-    margin: 25px auto 0 auto;
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,1);
 }
 
 #works {
-    max-width: 1100px;
-    margin: 125px auto;
     scroll-margin-top: 10rem;
     
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 0 5% 0 5%;
 }
 
 #work_menu {
     display: flex;
     flex-direction: column;
+    gap: 50px;
 }
 
 .work_box {
@@ -189,9 +193,7 @@ header {
     overflow: hidden;
     background-color: #202020;
     border-radius: 25px;
-    margin: 50px auto 0 auto;
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,1);
-    width: 90%;
 }
 
 .work_box a, .work_link, #copyright a {
@@ -227,7 +229,6 @@ header {
 }
 
 .work_button {
-    margin: 50px auto 0 auto;
     padding: 0 20px 0 20px;
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,1);
     border: none;
@@ -242,9 +243,14 @@ header {
 }
 
 #contact {
-    max-width: 1100px;
-    margin: 125px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 0 5%;
     /*scroll-margin-top: 10rem;*/
+}
+
+#contact .container .barrier {
+    height: 50px;
 }
 
 #contact_list {
@@ -252,7 +258,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px auto 0 auto;
+    gap: 20px;
 }
 
 #basic_info {
@@ -272,10 +278,6 @@ header {
     text-decoration: none;
 }
 
-#socials {
-    margin-top: 20px;
-}
-
 #socials nav {
     display: flex;
     gap: 20px;
@@ -291,16 +293,12 @@ header {
     filter: invert(1);
 }
 
-footer {
-    max-width: 1100px;
-    margin: 0 auto 50px auto;
-}
-
 #copyright {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 5% 0 5%;
 }
 
 #copyright p, #copyright a {
@@ -308,9 +306,13 @@ footer {
     text-decoration: none;
 }
 
+#last_barrier {
+    height: 50px;
+}
+
 /* For screen sizes starting with the iPad Air */
 @media screen and (min-width: 750px) and (max-width: 1100px) {
-    header {
+    .nav_bar {
         padding: 30px 5%;
     }
 
@@ -367,7 +369,7 @@ footer {
 }
 
 @media screen and (min-width: 1100px) {
-    header {
+    .nav_bar {
         padding: 30px 5%;
     }
     
@@ -424,27 +426,18 @@ footer {
     }
 
     #about {
-        max-width: 1100px;
-        margin: 125px auto;
-        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: stretch;
-        padding: 0 55px 0 55px;
+        align-items: center;
+        gap: 100px;
     }
     
     #about section {
-        display: block;
-        flex-direction: none;
-        justify-content: none;
-        align-items: none;
-        padding-left: 50px;
+        align-items: stretch;
     }
     
     #about section p {
-        width: 100%;
         text-indent: 0;
-        padding: 20px 0 0 0;
     }
     
     .role {
@@ -460,8 +453,6 @@ footer {
     }
 
     .exp_box {
-        width: 100%;
-        margin: 50px 0 0 0;
         z-index: 2;
         transform: scale(1);
         transition: transform 1s;
@@ -469,10 +460,6 @@ footer {
 
     .exp_box:hover {
         transform: scale(1.05)
-    }
-
-    #experience {
-        padding: 0 55px 0 55px;
     }
 
     .work_box {
@@ -498,27 +485,14 @@ footer {
     }
 
     #work_menu {
-        /*flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 50px;
-        */
-
         display: grid;
-        grid-template-rows: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(3, 1fr);
-    
-        padding: 0 36px 0 36px;
-    }
-
-    #contact_list {
-        padding: 0 55px 0 55px;
     }
 
     #copyright {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 55px 0 55px;
     }
 }
