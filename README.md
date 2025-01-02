@@ -36,6 +36,7 @@ Code
 
 ## Changelog
 - Portfolio Version 1.0 established on July 2024
+- Portfolio Version 1.1 established on January 2025
 
 ## License
 Established on July 2024 by MIKNSJ.

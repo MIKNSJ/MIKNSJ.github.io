@@ -18,3 +18,16 @@ window.onclick = function(event) {
         document.getElementById("nav_icon").classList.remove("change");
     }
 }
+
+
+function updateYear() {
+    oldYear = document.querySelector("#c_year");
+    newYear = new Date().getFullYear();
+    oldYear.innerHTML = newYear;
+    return;
+}
+
+
+window.onload = function() {
+    updateYear();
+}
