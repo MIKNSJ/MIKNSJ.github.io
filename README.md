@@ -1,7 +1,7 @@
 # MIKNSJ Portfolio
 
 ## Overview
-This is my portfolio page made with HTML, CSS and Javascript.
+This is my portfolio page made with HTML, CSS and JavaScript.
 
 ## Description
 View the website [here](https://miknsj.github.io/).
